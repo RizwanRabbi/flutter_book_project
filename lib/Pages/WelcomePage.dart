@@ -1,8 +1,9 @@
-// import 'package:e_book/Components/PrimaryButton.dart';
+// ignore: file_names
+import 'package:e_book/Components/PrimaryButton.dart';
 // import 'package:Controller/AuthController.dart';
 // import 'package:e_book/Pages/Homepage/HomePage.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+// import 'package:get/get.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -32,7 +33,7 @@ class WelcomePage extends StatelessWidget {
                       "E - Book Store",
                       style:
                           Theme.of(context).textTheme.headlineLarge?.copyWith(
-                                color: Theme.of(context).colorScheme.background,
+                                color: Theme.of(context).colorScheme.surface,
                               ),
                     ),
                     const SizedBox(height: 10),
@@ -41,7 +42,7 @@ class WelcomePage extends StatelessWidget {
                         "Welcome to Our Book App, Here you can indulge in the best books kickstart your intellectual ticks",
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.labelSmall?.copyWith(
-                              color: Theme.of(context).colorScheme.background,
+                              color: Theme.of(context).colorScheme.surface,
                             ),
                       ),
                     ),
@@ -80,15 +81,15 @@ class WelcomePage extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          // Padding(
-          //   padding: const EdgeInsets.all(10),
-          //   child: PrimaryButton(
-          //     btnName: "LOGIN WITH GOOGLE",
-          //     ontap: () {
-          //       authController.loginWithEmail();
-          //     },
-          //   ),
-          // )
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: PrimaryButton(
+              btnName: "LOGIN WITH GOOGLE",
+              ontap: () {
+                // authController.loginWithEmail();
+              },
+            ),
+          )
         ],
       ),
     );
