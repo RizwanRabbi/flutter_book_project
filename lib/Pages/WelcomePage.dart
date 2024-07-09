@@ -1,9 +1,8 @@
-// ignore: file_names
 import 'package:e_book/Components/PrimaryButton.dart';
 // import 'package:Controller/AuthController.dart';
-// import 'package:e_book/Pages/Homepage/HomePage.dart';
+import 'HomePage/HomePage.dart';
 import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
+import 'package:get/get.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -86,6 +85,10 @@ class WelcomePage extends StatelessWidget {
             child: PrimaryButton(
               btnName: "LOGIN WITH GOOGLE",
               ontap: () {
+                /*
+                      TODO: Remove the HomePage Line when Authentication is implemented
+                */
+                Get.offAll(HomePage()); // Eida pore remove kora lagbe
                 // authController.loginWithEmail();
               },
             ),
