@@ -17,7 +17,7 @@ class HomeAppBar extends StatelessWidget {
       title: Text(
         "E-BOOK Store",
         style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-              color: Theme.of(context).colorScheme.surface,
+              color: Theme.of(context).colorScheme.background,
             ),
       ),
       leading: InkWell(
