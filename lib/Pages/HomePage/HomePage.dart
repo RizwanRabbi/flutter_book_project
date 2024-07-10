@@ -34,9 +34,9 @@ class HomePage extends StatelessWidget {
                     Expanded(
                       child: Column(
                         children: [
-                          SizedBox(height: 30),
+                          const SizedBox(height: 30),
                           HomeAppBar(),
-                          SizedBox(height: 50),
+                          const SizedBox(height: 50),
                           Row(
                             children: [
                               Text(
@@ -45,9 +45,8 @@ class HomePage extends StatelessWidget {
                                     .textTheme
                                     .bodyLarge
                                     ?.copyWith(
-                                      color: Theme.of(context)
-                                          .colorScheme
-                                          .background,
+                                      color:
+                                          Theme.of(context).colorScheme.surface,
                                     ),
                               ),
                               Text(
@@ -62,7 +61,7 @@ class HomePage extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(height: 5),
+                          const SizedBox(height: 5),
                           Row(
                             children: [
                               Flexible(
@@ -118,7 +117,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.all(10),
               child: Column(
@@ -131,7 +130,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   // SingleChildScrollView(
                   //     scrollDirection: Axis.horizontal,
                   //     child: Obx(
